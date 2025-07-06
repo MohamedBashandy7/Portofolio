@@ -160,12 +160,13 @@ section.active {
 }
 
 @keyframes display-text {
-    25%,
-    100% {
+    0%, 20% {
+        display: inline-block;
+    }
+    25%, 100% {
         display: none;
     }
 }
-
 .home-details h2 span::before {
     content: attr(data-text);
     position: absolute;
